@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        dotnet-version: [8.0.x]
+        dotnet-version: NET_SECRET:${{secrets.NET_SECRET}}
 
     steps:
     - name: Check out code
